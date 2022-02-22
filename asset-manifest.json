@@ -5,11 +5,11 @@
     "main.js.map": "/static/js/main.9e4b4f8d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b67752ee.js",
     "runtime-main.js.map": "/static/js/runtime-main.b67752ee.js.map",
-    "static/css/2.373bc5f8.chunk.css": "/static/css/2.373bc5f8.chunk.css",
+    "static/css/2.ab75b8d7.chunk.css": "/static/css/2.ab75b8d7.chunk.css",
     "static/js/2.ea7e6726.chunk.js": "/static/js/2.ea7e6726.chunk.js",
     "static/js/2.ea7e6726.chunk.js.map": "/static/js/2.ea7e6726.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/2.373bc5f8.chunk.css.map": "/static/css/2.373bc5f8.chunk.css.map",
+    "static/css/2.ab75b8d7.chunk.css.map": "/static/css/2.ab75b8d7.chunk.css.map",
     "static/css/main.efc915ec.chunk.css.map": "/static/css/main.efc915ec.chunk.css.map",
     "static/js/2.ea7e6726.chunk.js.LICENSE.txt": "/static/js/2.ea7e6726.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/MonumentExtended-Ultrabold.9db16afe.otf",
@@ -50,7 +50,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b67752ee.js",
-    "static/css/2.373bc5f8.chunk.css",
+    "static/css/2.ab75b8d7.chunk.css",
     "static/js/2.ea7e6726.chunk.js",
     "static/css/main.efc915ec.chunk.css",
     "static/js/main.9e4b4f8d.chunk.js"
