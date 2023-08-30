@@ -1,22 +1,22 @@
 import React from "react";
 import "./Dashboard.css";
-// import UpcomingIcon from "./assets/UpcomingIcon.png";
 import calendar from "./assets/calendar.svg";
 import rupee from "./assets/rupee.svg";
 import like from "./assets/like.svg";
+import event_poster from './assets/event.webp';
 
 function Upcoming(props) {
 	return (
 		<div className="middle-card">
-			<p>{props.id}</p>
+			<p>{props.id || '-'}</p>
 			<div className="upcoming-icon">
-				{/* <img src={UpcomingIcon} alt="event"></img> */}
+				<img src={event_poster} alt="event"></img>
 			</div>
 			<div className="details">
-				<p>{props.name}</p>
+				<p>{props.name || 'Sample Event'}</p>
 				<div className="sign-detail">
 					<img src={calendar} alt="" className="detail-icon" />
-					{props.date}
+					{props.date || '20 August 2022'}
 				</div>
 				<div className="sign-detail">
 					<img src={rupee} alt="" className="detail-icon" />
@@ -24,7 +24,7 @@ function Upcoming(props) {
 				</div>
 				<div className="sign-detail">
 					<img src={like} alt="" className="detail-icon" />
-					{props.likes}
+					{props.likes || '2'}
 				</div>
 			</div>
 		</div>

@@ -54,17 +54,17 @@ class Navbar extends Component {
 			<div className="left-nav">
 				<div className="nav-main">
 					<div className="nav-logo">
-						<NavLink to="/profile/" activeClassName="active">
+						{/* <NavLink to="/profile/" activeClassName="active"> */}
 							{this.state.logo !== null ? <div className="logo-circle" title="Edit Profile">
 								<img src={this.state.logo} alt="Logo"></img>
 							</div> : <div className="logo-circle" title="Edit Profile" style={{backgroundColor: "orange", display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '2rem'}} >
 									{this.state.name[0]}
 								</div>}
-						</NavLink>
+						{/* </NavLink> */}
 						<div className="logo-edit" title="Edit Profile">
-							<NavLink to="/profile/">
+							{/* <NavLink to="/profile/"> */}
 								<EditIcon />
-							</NavLink>
+							{/* </NavLink> */}
 						</div>
 						<div className="nav-text">
 							<p
@@ -124,20 +124,20 @@ class Navbar extends Component {
 						<div className="links">
 							<ul>
 								<li title="Instagram">
-									<IGIcon /> &ensp; <p> @adgvnnnn</p>
+									<IGIcon /> &ensp; <p> @evoevents</p>
 								</li>
 								<li title="Facebook">
-									<FBIcon /> &ensp; <p> @adgvitnnnn</p>
+									<FBIcon /> &ensp; <p> @evoevents</p>
 								</li>
 								<li title="Twitter">
-									<TWIcon /> &ensp; <p> $adgnnnnn</p>
+									<TWIcon /> &ensp; <p> $evoevents</p>
 								</li>
 								<li title="Linkedin">
-									<LDIcon /> &ensp; <p> @adgvitnnnnnn</p>
+									<LDIcon /> &ensp; <p> @evoevents</p>
 								</li>
 								<li title="Medium">
 									<MEIcon /> &ensp;{" "}
-									<p> @adgvit202111nnnnnnnnnnnnnnn</p>
+									<p> @evoblogs</p>
 								</li>
 							</ul>
 						</div>

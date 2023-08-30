@@ -104,6 +104,11 @@ function Login() {
 						New Here? <span>Register Your Club to Continue</span>
 					</p>
 				</Link>
+				<Link to="/dashboard" exact>
+					<p className="link-reg">
+						<span>Go to Dashboard (For Demo Purpose)</span>
+					</p>
+				</Link>
 			</div>
 		</div>
 	);

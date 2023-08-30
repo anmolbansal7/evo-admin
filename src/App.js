@@ -1,6 +1,6 @@
 import React from "react";
-import { BrowserRouter, Router, Switch, Route } from "react-router-dom";
-import { motion } from "framer-motion";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+// import { motion } from "framer-motion";
 import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
@@ -10,7 +10,7 @@ import AllEvents from "./screens/AllEvents/AllEvents";
 import NewEvent from "./screens/NewEvent/NewEvent";
 import EditProfile from "./screens/EditProfile/EditProfile";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-import Loader from "react-loader-spinner";
+// import Loader from "react-loader-spinner";
 import { Redirect } from "react-router-dom";
 
 function App() {
@@ -23,57 +23,27 @@ function App() {
 				<Route
 					exact
 					path="/profile"
-					component={() => {
-						const token = localStorage.getItem("token");
-						if (!token) {
-							<Redirect to="/login" />;
-						}
-						return <EditProfile />;
-					}}
+					component={EditProfile}
 				/>
 				<Route
 					exact
 					path="/all"
-					component={() => {
-						const token = localStorage.getItem("token");
-						if (!token) {
-							<Redirect to="/login" />;
-						}
-						return <AllEvents />;
-					}}
+					component={AllEvents}
 				/>
 				<Route
 					exact
 					path="/new"
-					component={() => {
-						const token = localStorage.getItem("token");
-						if (!token) {
-							<Redirect to="/login" />;
-						}
-						return <NewEvent />;
-					}}
+					component={NewEvent}
 				/>
 				<Route
 					exact
 					path="/dashboard"
-					component={() => {
-						const token = localStorage.getItem("token");
-						if (!token) {
-							<Redirect to="/login" />;
-						}
-						return <Dashboard />;
-					}}
+					component={Dashboard}
 				/>
 				<Route
 					exact
 					path="/settings"
-					component={() => {
-						const token = localStorage.getItem("token");
-						if (!token) {
-							<Redirect to="/login" />;
-						}
-						return <Settings />;
-					}}
+					component={Settings}
 				/>
 			</Switch>
 		</BrowserRouter>

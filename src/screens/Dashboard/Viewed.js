@@ -1,13 +1,13 @@
 import React from "react";
 import "./Dashboard.css";
-// import GreyIcon from "./assets/GreyIcon.png";
+import event_poster from './assets/event.webp';
 
 function Viewed(props) {
 	return (
 		<div className="bottom-card">
 			<p>01</p>
 			<div className="event-icon">
-				{/* <img src={GreyIcon} alt="event"></img> */}
+				<img src={event_poster} alt="event"></img>
 			</div>
 			<div className="details">
 				<p className="big">Event Name</p>

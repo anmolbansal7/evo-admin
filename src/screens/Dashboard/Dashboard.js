@@ -10,7 +10,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 function Dashboard() {
-	const [events, setEvents] = useState([]);
+	const [events, setEvents] = useState([1, 2, 3, 4]);
 	const history = useHistory();
 	useEffect(() => {
 		axios
@@ -54,7 +54,7 @@ function Dashboard() {
 								return (
 									<Upcoming
 										key={ind}
-										id={ind}
+										id={ind+1}
 										name={i.name}
 										poster={i.poster}
 										isPaid={i.isPaid}
@@ -73,12 +73,10 @@ function Dashboard() {
 							<h3 className="title">Most Viewed Events</h3>
 							<Viewed />
 							<Viewed />
-							<Viewed />
 						</div>
 
 						<div className="left-bottom">
 							<h3 className="title">Most Liked Events</h3>
-							<Liked />
 							<Liked />
 							<Liked />
 						</div>
@@ -89,10 +87,10 @@ function Dashboard() {
 						<p className="notif">Notifications</p>
 						<div className="notif-text">
 							Welcome to Evo.{" "}
-							<Link to="/profile" exact>
+							{/* <Link to="/profile" exact>
 								<span>Click Here</span>
 							</Link>{" "}
-							to complete your Profile
+							to complete your Profile */}
 						</div>
 						<Notif text="Blender 3D Workhop was the 3rd most viewed workshop this week"></Notif>
 						<Notif text="Blender 3D Workhop was the 3rd most viewed workshop this week"></Notif>
