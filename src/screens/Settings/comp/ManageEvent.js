@@ -6,7 +6,7 @@ import greyicon from "./assets/greyicon.png";
 function ManageEvent({ name, date, image }) {
 	return (
 		<div className="manage-event">
-			<img src={image ? image : greyicon}></img>
+			<img src={image ? image : greyicon} alt=""></img>
 			<div className="event-details">
 				<p className="event-name">{name ? name : "Blender 3D Workshop"}</p>
 				<p className="event-date">{date ? date : "29 February 2022"}</p>

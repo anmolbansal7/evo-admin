@@ -1,5 +1,5 @@
 import "./Dashboard.css";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import PartnerBanner from "./assets/partner.svg";
 import Notif from "./Notif";

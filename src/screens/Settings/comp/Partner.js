@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 // import { ReactComponent as Banner } from "./assets/banner.svg";
 import "./style.css";
 import banner from "./assets/banner.png";

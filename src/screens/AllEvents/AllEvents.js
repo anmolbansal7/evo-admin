@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import "./AllEvents.css";
-import poster from "./assets/poster.svg";
+// import poster from "./assets/poster.svg";
 import UpcomingEvent from "./UpcomingEvent";
 import Modal from "./Modal";
 import React, { useState } from "react";

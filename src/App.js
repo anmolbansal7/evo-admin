@@ -11,7 +11,7 @@ import NewEvent from "./screens/NewEvent/NewEvent";
 import EditProfile from "./screens/EditProfile/EditProfile";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 // import Loader from "react-loader-spinner";
-import { Redirect } from "react-router-dom";
+// import { Redirect } from "react-router-dom";
 
 function App() {
 	return (
