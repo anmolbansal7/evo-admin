@@ -1,32 +1,28 @@
-import React, { lazy, Suspense } from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-
-// Lazy-loaded components
-const Landing = lazy(() => import("./pages/Landing"));
-const Login = lazy(() => import("./pages/Login"));
-const Signup = lazy(() => import("./pages/Signup"));
-const Dashboard = lazy(() => import("./screens/Dashboard/Dashboard"));
-const Settings = lazy(() => import("./screens/Settings/Settings"));
-const AllEvents = lazy(() => import("./screens/AllEvents/AllEvents"));
-const NewEvent = lazy(() => import("./screens/NewEvent/NewEvent"));
-const EditProfile = lazy(() => import("./screens/EditProfile/EditProfile"));
+import React from "react";
+import { HashRouter, Switch, Route } from "react-router-dom";
+import Landing from "./pages/Landing";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import Dashboard from "./screens/Dashboard/Dashboard";
+import Settings from "./screens/Settings/Settings";
+import AllEvents from "./screens/AllEvents/AllEvents";
+import NewEvent from "./screens/NewEvent/NewEvent";
+import EditProfile from "./screens/EditProfile/EditProfile";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Suspense fallback={<div>Loading...</div>}>
-        <Switch>
-          <Route exact path="/" component={Landing} />
-          <Route exact path="/register" component={Signup} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/profile" component={EditProfile} />
-          <Route exact path="/all" component={AllEvents} />
-          <Route exact path="/new" component={NewEvent} />
-          <Route exact path="/dashboard" component={Dashboard} />
-          <Route exact path="/settings" component={Settings} />
-        </Switch>
-      </Suspense>
-    </BrowserRouter>
+    <HashRouter basename="/">
+      <Switch>
+        <Route exact path="/" component={Landing} />
+        <Route exact path="/register" component={Signup} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/profile" component={EditProfile} />
+        <Route exact path="/all" component={AllEvents} />
+        <Route exact path="/new" component={NewEvent} />
+        <Route exact path="/dashboard" component={Dashboard} />
+        <Route exact path="/settings" component={Settings} />
+      </Switch>
+    </HashRouter>
   );
 }
 
