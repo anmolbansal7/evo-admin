@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/evo-admin/static/css/main.b2bfc316.css",
-    "main.js": "/evo-admin/static/js/main.21b63c69.js",
+    "main.js": "/evo-admin/static/js/main.e324556a.js",
     "static/media/poster.svg": "/evo-admin/static/media/poster.de354de12c1a04d727630d6d104f8ff3.svg",
     "static/media/bg.png": "/evo-admin/static/media/bg.f40dca963eaafd419625.png",
     "static/media/bg-full.png": "/evo-admin/static/media/bg-full.9622f8313a7a02203ef9.png",
@@ -43,10 +43,10 @@
     "static/media/close.svg": "/evo-admin/static/media/close.9c7c648bc46c29c825fde68ee1c50476.svg",
     "static/media/likes.svg": "/evo-admin/static/media/likes.2afed52d9c2918f8ff2733d7680d14f4.svg",
     "main.b2bfc316.css.map": "/evo-admin/static/css/main.b2bfc316.css.map",
-    "main.21b63c69.js.map": "/evo-admin/static/js/main.21b63c69.js.map"
+    "main.e324556a.js.map": "/evo-admin/static/js/main.e324556a.js.map"
   },
   "entrypoints": [
     "static/css/main.b2bfc316.css",
-    "static/js/main.21b63c69.js"
+    "static/js/main.e324556a.js"
   ]
 }
