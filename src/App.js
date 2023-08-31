@@ -1,63 +1,33 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-// import { motion } from "framer-motion";
-import Landing from "./pages/Landing";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-import Dashboard from "./screens/Dashboard/Dashboard";
-import Settings from "./screens/Settings/Settings";
-import AllEvents from "./screens/AllEvents/AllEvents";
-import NewEvent from "./screens/NewEvent/NewEvent";
-import EditProfile from "./screens/EditProfile/EditProfile";
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-// import Loader from "react-loader-spinner";
-// import { Redirect } from "react-router-dom";
+
+// Lazy-loaded components
+const Landing = lazy(() => import("./pages/Landing"));
+const Login = lazy(() => import("./pages/Login"));
+const Signup = lazy(() => import("./pages/Signup"));
+const Dashboard = lazy(() => import("./screens/Dashboard/Dashboard"));
+const Settings = lazy(() => import("./screens/Settings/Settings"));
+const AllEvents = lazy(() => import("./screens/AllEvents/AllEvents"));
+const NewEvent = lazy(() => import("./screens/NewEvent/NewEvent"));
+const EditProfile = lazy(() => import("./screens/EditProfile/EditProfile"));
 
 function App() {
-	return (
-		<BrowserRouter>
-			<Switch>
-				<Route exact path="/" component={Landing} />
-				<Route exact path="/register" component={Signup} />
-				<Route exact path="/login" component={Login} />
-				<Route
-					exact
-					path="/profile"
-					component={EditProfile}
-				/>
-				<Route
-					exact
-					path="/all"
-					component={AllEvents}
-				/>
-				<Route
-					exact
-					path="/new"
-					component={NewEvent}
-				/>
-				<Route
-					exact
-					path="/dashboard"
-					component={Dashboard}
-				/>
-				<Route
-					exact
-					path="/settings"
-					component={Settings}
-				/>
-			</Switch>
-		</BrowserRouter>
-		// <BrowserRouter>
-		//   <div>
-		//   {/* <Loader
-		//     type="Oval"
-		//     color="#5F2EEA"
-		//     height={50}
-		//     width={50}
-		//     timeout={10000} //3 secs
-		//   /> */}
-		//     <Switch>
-	);
+  return (
+    <BrowserRouter>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Switch>
+          <Route exact path="/" component={Landing} />
+          <Route exact path="/register" component={Signup} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/profile" component={EditProfile} />
+          <Route exact path="/all" component={AllEvents} />
+          <Route exact path="/new" component={NewEvent} />
+          <Route exact path="/dashboard" component={Dashboard} />
+          <Route exact path="/settings" component={Settings} />
+        </Switch>
+      </Suspense>
+    </BrowserRouter>
+  );
 }
 
 export default App;
